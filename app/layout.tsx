@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`mx-auto max-w-[1840px] antialiased`}>
-				<Header currentPath={"/"} />
+				<Header />
 				<main className="bg-[#16384E]">{children}</main>
 				<Footer />
 			</body>

@@ -1,7 +1,7 @@
+import { Navbar } from "./navbar";
 import Image from "next/image";
-import Link from "next/link";
 
-export const Header = ({ currentPath }: { currentPath: string }) => {
+export const Header = () => {
 	return (
 		<header className="text-[#16384E] px-10 md:px-20 w-full flex flex-col items-center justify-center">
 			<div className="py-4 md:py-6 w-full flex flex-row items-center justify-between">
@@ -55,61 +55,7 @@ export const Header = ({ currentPath }: { currentPath: string }) => {
 					</div>
 				</div>
 			</div>
-			<nav
-				style={{ fontFamily: "Poppins, sans-serif" }}
-				className="hidden sm:flex flex-row gap-7 text-[18px] tracking-[5%] pb-4"
-			>
-				<Link
-					href="/"
-					className={
-						currentPath === "/"
-							? "underline underline-offset-8 font-bold tracking-[5%]"
-							: ""
-					}
-				>
-					Главная
-				</Link>
-				<Link
-					href="/services"
-					className={
-						currentPath === "/services"
-							? "underline underline-offset-8 font-bold tracking-[5%]"
-							: ""
-					}
-				>
-					Услуги
-				</Link>
-				<Link
-					href="/prices"
-					className={
-						currentPath === "/prices"
-							? "underline underline-offset-8 font-bold tracking-[5%]"
-							: ""
-					}
-				>
-					Цены
-				</Link>
-				<Link
-					href="/about-company"
-					className={
-						currentPath === "/about-company"
-							? "underline underline-offset-8 font-bold tracking-[5%]"
-							: ""
-					}
-				>
-					О компании
-				</Link>
-				<Link
-					href="/contacts"
-					className={
-						currentPath === "/contacts"
-							? "underline underline-offset-8 font-bold tracking-[5%]"
-							: ""
-					}
-				>
-					Контакты
-				</Link>
-			</nav>
+			<Navbar />
 		</header>
 	);
 };
