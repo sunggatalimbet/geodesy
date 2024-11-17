@@ -235,3 +235,19 @@ export const geodezialResearches = {
 	],
 	columnNamesFarmlands: ["Сельхозугодий, полей"],
 };
+
+export const results = [
+	{ text: "На 564 объектах", color: "from-blue-300 to-blue-100" },
+	{
+		text: "В 19 областях России",
+		color: "from-green-300 to-green-100",
+	},
+	{
+		text: "Пробурили 16115 погонных метров разведочных скважин",
+		color: "from-yellow-300 to-yellow-100",
+	},
+	{
+		text: "Отсняли 936 гектаров топографической съемки",
+		color: "from-red-300 to-red-100",
+	},
+];

@@ -7,7 +7,7 @@ export default function PricesPageLayout({
 }) {
 	return (
 		<div>
-			<Banner spanTitle={"ГЛАВНАЯ/ЦЕНЫ"} title={"ЦЕНА"} />
+			<Banner spanTitle={"ГЛАВНАЯ/ПОЛЕЗНОЕ"} title={"О КОМПАНИИ"} />
 			{children}
 		</div>
 	);
