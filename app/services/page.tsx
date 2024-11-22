@@ -75,7 +75,7 @@ const ServicesTriangles = () => {
 
 const ServicesMore = () => {
 	return (
-		<section className="px-8 md:px-20 mb-[140px] lg:px-[60px] grid grid-cols-1 md:grid-cols-2 gap-10">
+		<section className="px-8 md:px-20 mb-[140px] lg:px-[60px] grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
 			{services.map((service, index) => {
 				return (
 					<div className="flex flex-col py-[] shadow-2xl" key={index}>

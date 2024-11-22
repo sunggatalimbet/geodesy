@@ -21,7 +21,7 @@ export const Banner = ({ spanTitle, title }: BannerProps) => {
 						{spanTitle}
 					</span>
 				</div>
-				<div className="self-center mt-4 md:mt-10">
+				<div className="self-center mt-6 md:mt-10">
 					<h1 className="text-[#16384E] text-4xl font-bold">{title}</h1>
 				</div>
 			</div>
