@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "../hook";
 
@@ -44,22 +43,20 @@ export default function ContactsPage() {
 					Где мы находимся?
 				</motion.h2>
 
-				<div className="grid md:grid-cols-2 gap-12 items-start">
-					{/* Map container */}
+				<div className="grid md:grid-cols-2 gap-8 items-start">
 					<motion.div variants={itemVariants}>
-						<Image
-							src={"/images/contacts-image.svg"}
-							alt={"Карта расположения офиса"}
-							width={648}
-							height={398}
-							className="object-cover rounded-xl"
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A740b77cfd9a4396ecd117ebbfd09aa47bf4c2e535c26b2bb1951dcdd6a0099ba&amp;source=constructor"
+							width="800"
+							height="400"
+							className="w-full md:max-w-[500px] "
 						/>
 					</motion.div>
 
 					{/* Contact information */}
 					<motion.div
 						variants={containerVariants}
-						className="flex flex-col justify-center h-full text-white space-y-8"
+						className="flex flex-col justify-center h-full text-white space-y-8 w-full"
 					>
 						<motion.div variants={itemVariants}>
 							<h3 className="text-xl font-semibold mb-1">Адрес:</h3>
