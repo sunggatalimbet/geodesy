@@ -20,17 +20,6 @@ export const Navbar = () => {
 				}
 				prefetch={false}
 			>
-				Главная
-			</Link>
-			<Link
-				prefetch={false}
-				href="/services"
-				className={
-					currentPath === "/services"
-						? "underline underline-offset-8 font-bold tracking-[5%]"
-						: ""
-				}
-			>
 				Услуги
 			</Link>
 			<Link
