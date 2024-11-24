@@ -1,7 +1,14 @@
+"use client";
+
+import { useState } from "react";
+import { MobileMenu } from "./mobile-navbar";
 import { Navbar } from "./navbar";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const Header = () => {
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 	return (
 		<header className="text-[#16384E] px-10 md:px-20 w-full flex flex-col items-center justify-center">
 			<div className="py-4 md:py-6 w-full flex flex-row items-center justify-between">
@@ -54,8 +61,33 @@ export const Header = () => {
 						</span>
 					</div>
 				</div>
+				<motion.button
+					className="sm:hidden"
+					onClick={() => setIsMobileMenuOpen(true)}
+					whileTap={{ scale: 0.95 }}
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						className="w-8 h-8"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth={2.5}
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+				</motion.button>
 			</div>
+
 			<Navbar />
+			<MobileMenu
+				isOpen={isMobileMenuOpen}
+				onClose={() => setIsMobileMenuOpen(false)}
+			/>
 		</header>
 	);
 };
