@@ -1,41 +1,47 @@
 export const servicesTriangles = [
 	{
-		text: "Геологические изыскания",
+		text: "⁠⁠Отчет подсчета запасов на основание разведки",
 		imgSrc: "/images/service-1.png",
 		imgClip: "polygon(100% 50%, 0 0, 0 100%)",
-		textPos: "absolute top-0 -right-10 sm:right-0",
+		textPos: "absolute -top-4 sm:top-0 -right-12 sm:-right-6",
+		key: "report",
 	},
 	{
-		text: "Экологические изыскания",
+		text: "⁠⁠Бурение скважин и Анализ грунта",
 		imgSrc: "/images/service-2.png",
 		imgClip: "polygon(0 50%, 100% 0, 100% 100%)",
 		textPos:
 			"absolute top-1/2 transform -translate-y-1/2 -right-[90px] sm:-right-[120px]",
+		key: "drilling",
 	},
 	{
-		text: "Гидрометерологические изыскания",
+		text: "Маркшейдерская лицензия",
 		imgSrc: "/images/service-3.png",
 		imgClip: "polygon(100% 50%, 0 0, 0 100%)",
 		textPos: "absolute -bottom-4 sm:bottom-0 -right-8",
+		key: "surveying",
 	},
 	{
-		text: "Техническое обследование зданий, сооружений",
+		text: "Разработка ТЭО разведочных кондиций",
 		imgSrc: "/images/service-4.png",
 		imgClip: "polygon(100% 0, 0 50%, 100% 100%)",
 		textPos: "absolute -top-6 -left-12 sm:left-0",
+		key: "development",
 	},
 	{
-		text: "Разработка проекта С33",
+		text: "Проектирование и Подготовительные работы",
 		imgSrc: "/images/service-5.png",
 		imgClip: "polygon(100% 50%, 0 0, 0 100%)",
 		textPos:
 			"absolute top-1/2 transform -translate-y-1/2 -left-[90px] sm:-left-[120px]",
+		key: "preparation",
 	},
 	{
-		text: "Геодезичские изыскания",
+		text: "Предпроектное бурение",
 		imgSrc: "/images/service-6.png",
 		imgClip: "polygon(100% 100%, 0 50%, 100% 0)",
-		textPos: "absolute -bottom-4 sm:bottom-0 sm:left-0",
+		textPos: "absolute -bottom-4 .sm:bottom-0 sm:left-0",
+		key: "preproject",
 	},
 ];
 
@@ -45,36 +51,42 @@ export const services = [
 		title: "предпроектной бурение в составе геологических изысканий",
 		subtitle:
 			"Профессионально выполненные инженерно-геологические изыскания для строительства – это основа безошибочного проектирования дома и любого другого сооружения.",
+		key: "preproject",
 	},
 	{
 		imageSrc: "/images/service-more-2.png",
 		title: "⁠⁠проектирование и подготовительные работы",
 		subtitle:
 			"Георадарные исследования: цели, задачи и нюансы При желании качественно выполнить обследование объекта, следует заказать такую услугу, как георадарная съемка − один из наиболее распространенных, помехозащищенный…",
+		key: "preparation",
 	},
 	{
 		imageSrc: "/images/service-more-3.png",
 		title: "бурение скважин и анализ грунта",
 		subtitle:
 			"Компания ООО «ГеоГИС» осуществляет специальные геофизические изыскания, цена которых вас приятно удивит. Геофизические работы являются обязательной составной частью геологических изысканий для строительства…",
+		key: "drilling",
 	},
 	{
 		imageSrc: "/images/service-more-4.png",
 		title: "отчет подсчета запасов на основание разведки",
 		subtitle:
 			"Началу строительно-монтажных и любых земляных работ предшествует изучение условий на местности. Абсолютно одинаковых участков нет. Каждая площадка имеет свои особенности и индивидуальные характеристики.…",
+		key: "report",
 	},
 	{
 		imageSrc: "/images/service-more-5.png",
 		title: "маркшейдерский работы с предоставление отчета",
 		subtitle:
 			"Топографическая съемка – наиболее востребованный вид услуг, оказываемых специалистами нашего профильного предприятия «ГеоГИС» населению и организациям Москвы, Московского региона по выгодной цене. Посмотреть…",
+		key: "surveying",
 	},
 	{
 		imageSrc: "/images/service-more-6.png",
 		title: "разработка ТЭО разведочных кондиций",
 		subtitle:
 			"Геодезическое сопровождение строительства – это проводимый специалистами, оговоренный в нормативно-правовых актах, комплекс изысканий. Он необходим для сбора и анализа всех данных об объекте строительства,…",
+		key: "development",
 	},
 ];
 

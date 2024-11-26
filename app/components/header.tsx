@@ -13,11 +13,11 @@ export const Header = () => {
 		<header className="text-[#16384E] px-10 md:px-20 w-full flex flex-col items-center justify-center">
 			<div className="py-4 md:py-6 w-full flex flex-row items-center justify-between">
 				<Image
-					src="/geodezia/logo.svg"
+					src="/logo.png"
 					alt={"Геодезия логотип"}
 					width={144}
-					height={65}
-					className="w-[112px] h-[62px] md:w-[152px] md:h-[72px]"
+					height={88}
+					className="w-[112px] h-[62px] sm:w-[144px] sm:h-[88px]"
 				/>
 				<div className="hidden sm:flex flex-col flex-1">
 					<h1
@@ -57,7 +57,7 @@ export const Header = () => {
 							style={{ fontFamily: "Poppins, sans-serif" }}
 							className="text-[14px] md:text-normal pl-1 text-[#16384E] font-semibold"
 						>
-							+7 702 301 2796
+							+7 910 005 2260
 						</span>
 					</div>
 				</div>

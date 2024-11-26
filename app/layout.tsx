@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title: "ССТ - Геолого-разведатывательная компания",
 	description: "Геодезия, которой можно доверять",
 	icons: {
-		icon: "/geodezia/logo.svg",
+		icon: "/logo.png",
 	},
 };
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { services, servicesTriangles } from "./constants";
 import { useInView } from "./hook";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProvidedServicesPage() {
 	return (
@@ -42,55 +43,71 @@ const ServicesTriangles = () => {
 			<div className="my-10 sm:my-20 flex flex-wrap flex-row-reverse h-full relative items-center justify-center w-full text-white">
 				<div className="flex flex-col sm:pl-1">
 					{servicesTriangles.slice(0, 3).map((service, index) => (
-						<motion.div
-							key={index}
-							initial={{ opacity: 0 }}
-							animate={isInView ? { opacity: 1, scale: 1 } : {}}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							className="group transition-all duration-150 ease-in-out relative clip-triangle-top-right ml-[3px] mt-[-52px] sm:mt-[-92px]"
-						>
-							<Image
-								src={service.imgSrc}
-								alt={service.text}
-								width={100}
-								height={100}
-								style={{ clipPath: service.imgClip }}
-								className="saturate-100 lg:saturate-0 w-[100px] sm:w-[170px] sm:h-[200px] group-hover:saturate-100 group-hover:scale-105 group-hover:z-[100] transition-transform duration-150"
-							/>
-							<motion.h3
-								style={{ fontFamily: "Poppins, sans-serif" }}
-								className={`${service.textPos} group-hover:font-bold text-[10px] sm:text-[14px] max-w-[90px] sm:max-w-[115px] text-center font-medium tracking-[5%] leading-[15px] transition-all`}
+						<Link key={index} href={`#${service.key}`}>
+							<motion.div
+								initial={{ opacity: 0 }}
+								animate={
+									isInView ? { opacity: 1, scale: 1 } : {}
+								}
+								transition={{
+									duration: 0.5,
+									delay: index * 0.1,
+								}}
+								className="group transition-all duration-150 ease-in-out relative clip-triangle-top-right ml-[3px] mt-[-52px] sm:mt-[-92px]"
 							>
-								{service.text}
-							</motion.h3>
-						</motion.div>
+								<Image
+									src={service.imgSrc}
+									alt={service.text}
+									width={100}
+									height={100}
+									style={{ clipPath: service.imgClip }}
+									className="saturate-100 lg:saturate-0 w-[100px] sm:w-[170px] sm:h-[200px] group-hover:saturate-100 group-hover:scale-105 group-hover:z-[100] transition-transform duration-150"
+								/>
+								<motion.h3
+									style={{
+										fontFamily: "Poppins, sans-serif",
+									}}
+									className={`${service.textPos} group-hover:font-bold text-[10px] sm:text-[14px] max-w-[90px] sm:max-w-[115px] text-center font-medium tracking-[5%] leading-[15px] transition-all`}
+								>
+									{service.text}
+								</motion.h3>
+							</motion.div>
+						</Link>
 					))}
 				</div>
 
 				<div className="flex flex-col">
 					{servicesTriangles.slice(3, 6).map((service, index) => (
-						<motion.div
-							key={index}
-							initial={{ opacity: 0 }}
-							animate={isInView ? { opacity: 1, scale: 1 } : {}}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							className="group transition-all duration-150 ease-in-out relative clip-triangle-top-right ml-[3px] mt-[-52px] sm:mt-[-92px]"
-						>
-							<Image
-								src={service.imgSrc}
-								alt={service.text}
-								width={100}
-								height={100}
-								style={{ clipPath: service.imgClip }}
-								className="saturate-100 lg:saturate-0 w-[100px] sm:w-[170px] sm:h-[200px] group-hover:saturate-100 group-hover:scale-105 group-hover:z-[100] transition-transform duration-150"
-							/>
-							<motion.h3
-								style={{ fontFamily: "Poppins, sans-serif" }}
-								className={`${service.textPos} group-hover:font-bold text-[10px] sm:text-[14px] max-w-[90px] sm:max-w-[115px] text-center font-medium tracking-[5%] leading-[15px] transition-all`}
+						<Link key={index} href={`#${service.key}`}>
+							<motion.div
+								initial={{ opacity: 0 }}
+								animate={
+									isInView ? { opacity: 1, scale: 1 } : {}
+								}
+								transition={{
+									duration: 0.5,
+									delay: index * 0.1,
+								}}
+								className="group transition-all duration-150 ease-in-out relative clip-triangle-top-right ml-[3px] mt-[-52px] sm:mt-[-92px]"
 							>
-								{service.text}
-							</motion.h3>
-						</motion.div>
+								<Image
+									src={service.imgSrc}
+									alt={service.text}
+									width={100}
+									height={100}
+									style={{ clipPath: service.imgClip }}
+									className="saturate-100 lg:saturate-0 w-[100px] sm:w-[170px] sm:h-[200px] group-hover:saturate-100 group-hover:scale-105 group-hover:z-[100] transition-transform duration-150"
+								/>
+								<motion.h3
+									style={{
+										fontFamily: "Poppins, sans-serif",
+									}}
+									className={`${service.textPos} group-hover:font-bold text-[10px] sm:text-[14px] max-w-[90px] sm:max-w-[115px] text-center font-medium tracking-[5%] leading-[15px] transition-all`}
+								>
+									{service.text}
+								</motion.h3>
+							</motion.div>
+						</Link>
 					))}
 				</div>
 			</div>
@@ -113,6 +130,7 @@ const ServicesMore = () => {
 						transition={{ duration: 0.5, delay: index * 0.1 }}
 						animate={isInView ? { opacity: 1, y: 0 } : {}}
 						className="flex flex-col shadow-2xl"
+						id={service.key}
 					>
 						<div className="relative">
 							<Image
