@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const menuItems = [
 	{ href: "/", label: "Услуги" },
-	{ href: "/prices", label: "Цены" },
 	{ href: "/about-company", label: "О компании" },
 	{ href: "/contacts", label: "Контакты" },
 ];

@@ -24,17 +24,6 @@ export const Navbar = () => {
 			</Link>
 			<Link
 				prefetch={false}
-				href="/prices"
-				className={
-					currentPath === "/prices"
-						? "underline underline-offset-8 font-bold tracking-[5%]"
-						: ""
-				}
-			>
-				Цены
-			</Link>
-			<Link
-				prefetch={false}
 				href="/about-company"
 				className={
 					currentPath === "/about-company"

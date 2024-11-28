@@ -5,6 +5,7 @@ import { MobileMenu } from "./mobile-navbar";
 import { Navbar } from "./navbar";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const Header = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,9 +43,12 @@ export const Header = () => {
 					</div>
 				</div>
 				<div className="flex flex-col gap-2">
-					<button className="bg-[#FF8C00] rounded-2xl text-[#16384E] px-6 py-2 text-[15px] tracking-[5%] font-bold">
+					<Link
+						href="tel:+79100052260"
+						className="bg-[#FF8C00] rounded-2xl text-[#16384E] px-6 py-2 text-[15px] tracking-[5%] font-bold"
+					>
 						Связаться
-					</button>
+					</Link>
 					<div className="flex flex-row items-center">
 						<Image
 							src={"/geodezia/phone-icon.svg"}

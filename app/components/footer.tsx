@@ -26,7 +26,6 @@ export const Footer = () => {
 				>
 					<div className="flex flex-row sm:flex-col text-[16px] md:text-[12px] sm:text-normal h-full py-2 sm:py-8 gap-4 font-bold">
 						<Link href="/">Услуги</Link>
-						<Link href="/prices">Цены</Link>
 						<Link href="/about-company">О нас</Link>
 						<Link href="/contacts">Контакты</Link>
 					</div>
