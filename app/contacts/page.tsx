@@ -59,15 +59,20 @@ export default function ContactsPage() {
 						className="flex flex-col justify-center h-full text-white space-y-8 w-full"
 					>
 						<motion.div variants={itemVariants}>
-							<h3 className="text-xl font-semibold mb-1">Адрес:</h3>
+							<h3 className="text-xl font-semibold mb-1">
+								Адрес:
+							</h3>
 							<p className="md:max-w-[320px] text-lg leading-relaxed">
-								678962, Республика Саха (Якутия), Нерюнгринский район, город
-								Нерюнгри, Новостроевская ул., д. 9, офис 4
+								678962, Республика Саха (Якутия), Нерюнгринский
+								район, город Нерюнгри, Новостроевская ул., д. 9,
+								офис 4
 							</p>
 						</motion.div>
 
 						<motion.div variants={itemVariants}>
-							<h3 className="text-xl font-semibold mb-1">Связаться с нами:</h3>
+							<h3 className="text-xl font-semibold mb-1">
+								Связаться с нами:
+							</h3>
 							<a
 								href="tel:+79100052260"
 								className="text-lg hover:text-orange-400 transition-colors"
@@ -77,12 +82,14 @@ export default function ContactsPage() {
 						</motion.div>
 
 						<motion.div variants={itemVariants}>
-							<h3 className="text-xl font-semibold mb-1">Почта:</h3>
+							<h3 className="text-xl font-semibold mb-1">
+								Почта:
+							</h3>
 							<a
-								href="mailto:support@sts.org"
+								href="mailto:geologygroup@yandex.ru"
 								className="text-lg hover:text-orange-400 transition-colors"
 							>
-								support@sts.org
+								geologygroup@yandex.ru
 							</a>
 						</motion.div>
 					</motion.div>
