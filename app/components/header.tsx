@@ -15,8 +15,8 @@ export const Header = () => {
 				<Image
 					src="/logo.png"
 					alt={"Геодезия логотип"}
-					width={144}
-					height={88}
+					width={112}
+					height={62}
 					className="w-[112px] h-[62px] sm:w-[144px] sm:h-[88px]"
 				/>
 				<div className="hidden sm:flex flex-col flex-1">

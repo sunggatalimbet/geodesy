@@ -140,29 +140,24 @@ const ServicesMore = () => {
 								width={600}
 								height={600}
 							/>
-							<h4
-								style={{ fontFamily: "Inter, sans-serif" }}
-								className="text-[10px] tracking-[5%] uppercase p-2 text-white absolute right-0 rounded-tl-xl bottom-10 bg-[#16384E] max-w-[235px]"
-							>
+							<h4 className="text-[10px] tracking-[5%] uppercase p-2 text-white absolute right-0 rounded-tl-xl bottom-10 bg-[#16384E] max-w-[235px]">
 								{service.title}
 							</h4>
 						</div>
 
 						<div className="flex flex-col justify-between py-4 gap-4 bg-white flex-1">
-							<p
-								style={{ fontFamily: "Montserrat, sans-serif" }}
-								className="px-8 text-[12px]"
-							>
+							<p className="px-8 text-[12px]">
 								{service.subtitle}
 							</p>
-							<motion.button
+							<motion.div
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
-								style={{ fontFamily: "Inter, sans-serif" }}
 								className="rounded-md text-white mx-auto text-[13px] tracking-[5%] font-bold px-[22px] py-3 bg-[#FF8C00] hover:bg-[#ff8c00c9] transition-all"
 							>
-								Узнать больше
-							</motion.button>
+								<Link href="https://wa.me/+79100052260">
+									Запросить цену
+								</Link>
+							</motion.div>
 						</div>
 					</motion.div>
 				);

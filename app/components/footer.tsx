@@ -7,11 +7,11 @@ export const Footer = () => {
 			<div className="w-full flex flex-col sm:flex-row justify-between">
 				<div className="flex flex-col items-center  gap-4 pt-8">
 					<Image
-						src="/geodezia/logo-footer.svg"
+						src="/logo.png"
 						alt={"Геодезия логотип"}
 						width={144}
-						height={65}
-						className="w-[144px] h-[65px]"
+						height={80}
+						className="w-[144px] h-[80px]"
 					/>
 					<h6
 						style={{ fontFamily: "Poppins, sans-serif" }}
@@ -31,15 +31,18 @@ export const Footer = () => {
 						<Link href="/contacts">Контакты</Link>
 					</div>
 					<div className="text-normal md:text-[12px] sm:text-normal text-[#16384E] font-bold h-full flex flex-col items-start justify-normal gap-4 py-2 sm:py-8">
-						<div className="flex flex-row items-center gap-2">
+						<Link
+							href="tel:+79100052260"
+							className="flex flex-row items-center gap-2"
+						>
 							<Image
 								src="/geodezia/phone-footer.svg"
 								alt={"Номер телефона"}
 								width={24}
 								height={24}
 							/>
-							<p>+7 702 301 2796</p>
-						</div>
+							<p>+7 910 005 2260</p>
+						</Link>
 						<div className="flex flex-row items-center gap-2">
 							<Image
 								src="/geodezia/ig-footer.svg"
