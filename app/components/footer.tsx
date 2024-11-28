@@ -44,21 +44,12 @@ export const Footer = () => {
 						</Link>
 						<div className="flex flex-row items-center gap-2">
 							<Image
-								src="/geodezia/ig-footer.svg"
-								alt={"Наш инстаграм"}
-								width={24}
-								height={24}
-							/>
-							<p>@sts</p>
-						</div>
-						<div className="flex flex-row items-center gap-2">
-							<Image
 								src="/geodezia/mail-footer.svg"
 								alt={"Электронная Почта"}
 								width={24}
 								height={24}
 							/>
-							<p>support@sts.org</p>
+							<p>geologygroup@yandex.ru</p>
 						</div>
 					</div>
 				</div>
